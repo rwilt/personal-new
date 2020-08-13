@@ -5,20 +5,9 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Hey! I'm Rosie (flower). I'm a software engineer living in Brooklyn, NY (bodega flower) by way of New Jersey (white mana burger or diner). 
+        Prior to tech, I was in the luxury fashion space working in wholesale and merchandising for brands like RE/DONE (jeans). 
+        I'm actively seeking new roles, and I'm passionate about creativity (do something cool with the text), helping others, and learning new things.</h1>
     </div>
   );
 }
