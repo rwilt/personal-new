@@ -84,6 +84,14 @@ span{
   padding: 0; */ 
 }
 
+.highlight{
+
+  background: linear-gradient(180deg, transparent 62%, rgb(175, 163, 255, .3) 0) 50%/0 25% no-repeat;
+  /* background: linear-gradient(180deg, transparent 62%, rgb(201, 66, 119) 0) 50%/0 25% no-repeat; */
+  background-size: 0px 75%;
+  background-size: 100% 100%;
+}
+
 
 .highlight:hover{
   font-family: 'Compagnon Bold';
