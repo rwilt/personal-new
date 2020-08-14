@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import './App.css';
 import {NavLink, Link} from 'react-router-dom';
 
-const Projects = (props) => {
+const Contact = (props) => {
 
 return(
     <div>My projects</div>
@@ -10,4 +10,4 @@ return(
     
 }
 
-export default Projects;
+export default Contact;

@@ -2,12 +2,12 @@ import React, {useState, useEffect} from 'react';
 import './App.css';
 import {NavLink, Link} from 'react-router-dom';
 
-const Projects = (props) => {
+const About = (props) => {
 
-return(
-    <div>My projects</div>
-)
-    
+    return(
+        <div></div>
+    )
+
 }
 
-export default Projects;
+export default About;

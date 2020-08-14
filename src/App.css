@@ -144,7 +144,7 @@ span{
   flex-direction: column;
   /* align-items: center; */
   justify-content: center;
-  margin-top: 6%;
+  margin-top: 2%;
   width: 75vw;
   margin-left: auto;
   margin-right: auto;
@@ -156,4 +156,30 @@ color: rgba(9, 8, 8, 0.886);
 transition: color .3s; 
 cursor: pointer;
 text-decoration: none;
+}
+
+.nav-container{
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  padding: 20px;
+  width: 100vw;
+  
+}
+.nav-link{
+  font-family: 'YoungSerif';
+  margin: 0 40px 0 0 ;
+  font-size: 30px;
+}
+
+.nav-link:hover{
+  letter-spacing: 0.2em;
+  color:rgb(252, 68, 15);
+  cursor: pointer;
+  display: inline;
+  z-index: 1;
+  background: linear-gradient(180deg, transparent 62%, rgb(175, 163, 255, .5) 0) 50%/0 25% no-repeat;
+  /* background: linear-gradient(180deg, transparent 62%, rgb(201, 66, 119) 0) 50%/0 25% no-repeat; */
+  background-size: 0px 75%;
+  background-size: 100% 100%;
 }
