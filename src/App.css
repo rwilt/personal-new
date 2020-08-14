@@ -53,16 +53,21 @@
 } */
 h1{
    padding: 0;
-  font-size: 6vh;
+  font-size: 30px;
   font-family: 'Compagnon Medium';
   line-height: 1;
   letter-spacing: 0.0001em;
 }
 
 body{
-  background-color: ivory;
+  background-image: linear-gradient(100deg, rgb(252, 68, 15, .2), rgb(144, 122, 214, .3) 70%),
+  linear-gradient(650deg,rgba(232, 63, 17, 0.1), rgb(144, 122, 214, .0) 10%);
+  background-size: auto;
  color:rgb(252, 68, 15, .9);
+ color: rgb(69, 69, 69);
+
  /* color:#C94277; */
+ /* color:)rgb(218, 191, 255, .7) */
 }
 
 span{
@@ -90,4 +95,26 @@ span{
   /* background: linear-gradient(180deg, transparent 62%, rgb(201, 66, 119) 0) 50%/0 25% no-repeat; */
   background-size: 0px 75%;
   background-size: 100% 100%;
+}
+
+.rose{
+  height: 60px;
+}
+
+.intro{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  margin-top: 10%;
+  width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+a{
+  color:black;
+  cursor: pointer;
+  text-decoration: none;
 }
