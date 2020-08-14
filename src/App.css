@@ -8,9 +8,9 @@
          
   font-weight: normal;
   font-style: normal;
-} */
+}
 
-/* @font-face {
+ @font-face {
   font-family: 'Gangster Grotesk Regular';
   src:    url('./fonts/gangstergrotesk-regular.eot');
   src:    url('./fonts/gangstergrotesk-regular.woff') format('woff'),
@@ -19,6 +19,13 @@
   font-weight: normal;
   font-style: normal;
 } */
+
+@font-face {
+  font-family: "Porpora-Regular";
+  src: url("./fonts/Porpora-Regular.woff2") format("woff2"),
+       url("./fonts/Porpora-Regular.woff2") format("woff");
+}
+
 
 @font-face {
   font-family: 'Compagnon Regular';
@@ -47,24 +54,46 @@
   font-weight: medium;
   font-style: normal;
 }
+
+
+@font-face {
+  font-family: "Syne Regular";
+  src: url('./fonts/Syne-Regular.eot');
+  src: url('./fonts/Syne-Regular.woff') format('woff'),
+       url('./fonts/Syne-Regular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "YoungSerif";
+  src: url('./fonts/YoungSerif-Regular.eot');
+  src: url('./fonts/YoungSerif-Regular.woff') format('woff'),
+       url('./fonts/YoungSerif-Regular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: bold;
+}
+
+
 /* h1{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 50px;
 } */
 h1{
    padding: 0;
-  font-size: 30px;
-  font-family: 'Compagnon Medium';
-  line-height: 1.2;
-  letter-spacing: 0.0001em;
+  font-size: 35px;
+  font-family: 'Porpora-Regular';
+  line-height: 1;
+  letter-spacing: 0.1em;
 }
 
 body{
-  background-image: linear-gradient(100deg, rgb(252, 68, 15, .2), rgb(144, 122, 214, .2) 70%),
-  linear-gradient(650deg,rgba(232, 63, 17, 0.1), rgb(144, 122, 214, .0) 10%);
-  background-size: auto;
- color:rgb(252, 68, 15, .9);
- color: rgb(69, 69, 69);
+
+background-color: rgb(255, 232, 209, .7);
+height: 100vh;
+color: rgba(9, 8, 8, 0.886);
+/* color:rgb(252, 68, 15); */
+ /* color: rgb(69, 69, 69); */
 
  /* color:#C94277; */
  /* color:)rgb(218, 191, 255, .7) */
@@ -94,7 +123,8 @@ span{
 
 
 .highlight:hover{
-  font-family: 'Compagnon Bold';
+  font-family: 'Porpora-Regular';
+  letter-spacing: 0.2em;
   color:rgb(252, 68, 15);
   cursor: pointer;
   display: inline;
@@ -114,19 +144,16 @@ span{
   flex-direction: column;
   /* align-items: center; */
   justify-content: center;
-  margin-top: 10%;
-  width: 70vw;
+  margin-top: 6%;
+  width: 75vw;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 a{
-  color:black;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.bagel{
-
+  /* color:rgb(252, 68, 15, .9); */
+color: rgba(9, 8, 8, 0.886);
+transition: color .3s; 
+cursor: pointer;
+text-decoration: none;
 }

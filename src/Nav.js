@@ -6,13 +6,12 @@ let Nav = (props) => {
     return (
         <div>
             <header>
-            Nav will go here. Maybe icons??? figure it out.
-                {/* <ui>
-                <li>Contact</li>
+
+                <ul>
                 <li>Projects</li>
-                <li>Resume</li>
-                <li>etc.</li>
-                </ui> */}
+                <li>Contact</li>
+                <li>★</li>
+                </ul>
             </header>
         </div>
     )
