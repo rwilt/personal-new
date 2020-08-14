@@ -3,12 +3,12 @@ import './App.css';
 import Nav from './Nav';
 import {NavLink, Link} from 'react-router-dom';
 
-const Contact = (props) => {
+const Resume = (props) => {
 
 return(
-    <div><Nav/></div>
+    <div> <Nav/></div>
 )
     
 }
 
-export default Contact;
+export default Resume;

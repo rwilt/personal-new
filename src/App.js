@@ -4,9 +4,7 @@ import Rose from './rose.png'
 import Bagel from './bboy.png';
 import Nav from './Nav';
 import Projects from './Projects';
-import {Switch, Route} from 'react-router-dom';
-import {BrowserRouter as Router} from 'react-router-dom';
-import {NavLink, Link} from 'react-router-dom';
+import {Switch, Route, BrowserRouter as Router, NavLink, Link} from 'react-router-dom';
 import About from './About';
 import Contact from './Contact';
 
@@ -15,6 +13,7 @@ function App() {
 let [hover, setHover] = useState(false)
 let [bagelHover, setBagelHover] = useState(false)
 let [mousePos, setMousePos ] = useState({x:0, y:0})
+let [clicked, setClick] = useState(false)
 
 const handleMouseOver = e => {
   setMousePos({x: e.clientX - 10, y: e.clientY - 10})
@@ -87,6 +86,10 @@ let styles = {
   position:"absolute", top: mousePos.y + "px", left: mousePos.x + "px", height: 130
 }
 
+let handleClick = (e) => {
+  setClick((prevState) => {return !prevState})
+}
+
   return (
  
     <div>
@@ -97,23 +100,11 @@ let styles = {
        <h1>At age 12, I created my first website. </h1>
      
        <h1>Previously I worked in sales and merchandising for luxury fashion companies like <a className="highlight" href="http://shopredone.com">RE/DONE</a>.</h1>
-       <h1>Check out my <NavLink to="/projects" className="highlight" exact>projects</NavLink> and <NavLink to="resume" className="highlight">CV</NavLink> for more.</h1>
+       <h1>Check out my <NavLink to="/projects" className="highlight">projects</NavLink> and <a href="/resume"  className="highlight" exact>CV</a> for more.</h1>
        <h1>Outside of that, I enjoy Overwatch, <a className="highlight" href="https://www.youtube.com/watch?v=tTCS3cAaM3I">90's twee bands</a>, and Keanu Reeves. I live in Brooklyn with my cat, <span className="highlight" onMouseEnter={handleBMouseOver}  onMouseLeave={handleMouseOut}>Bagel{bagelHover && <img src={Bagel} className="bagel" onMouseMove={(e)=>{moveMouseBImg(e)}} style={styles}/>} </span>.</h1>
  
        <h1>Still curious? <a href className="highlight" href={`mailto:${"rosie.wilt@gmail.com"}?subject=Hi%20Rosie%20:)!&body=Hey Rosie!%0D%0A%0D%0A I wanted to reach out about...[your message here - ideas: job opportunities, my projects, skincare, favorite breed of dog, Buffy and Spike vs. Buffy and Angel, etc.].`}>e-mail me</a>! </h1>
-   <Router>
-<Switch>
-  <Route path="/projects" exact>
-    <Projects/>
-  </Route>
-  <Route path="/about">
-    <About/>
-  </Route>
-  <Route path="/contact">
-    <Contact/>
-  </Route>
-</Switch>
-  </Router>
+
     </div>
     </div>
   

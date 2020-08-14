@@ -183,3 +183,26 @@ text-decoration: none;
   background-size: 0px 75%;
   background-size: 100% 100%;
 }
+
+/* /*--Project Component--*\ */
+
+.project-container{
+ 
+  /* left: 0;
+  top: 0; */
+ 
+  background-color:rgb(252, 68, 15)
+}
+.project-container, #show-page{
+height: 100vh;
+width: 100vh;
+
+position: fixed;
+z-index: 1;
+right: 0;
+top: 0;
+overflow-x: hidden;
+border: 1px solid black;
+position: fixed;
+z-index: 1;
+}

@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
-import {NavLink, Link} from 'react-router-dom';
 import Projects from './Projects';
+import Contact from './Contact';
 import About from './About';
-
+import {NavLink, Link} from 'react-router-dom';
 
 let Nav = (props) => {
 
@@ -14,6 +14,7 @@ let Nav = (props) => {
                 <NavLink className="nav-link" to="/contact" exact>Contact</NavLink>
                 <NavLink className="nav-link" to="/about" exact>★</NavLink>
             </header>
+          
         </div>
     )
 
