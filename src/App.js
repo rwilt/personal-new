@@ -4,6 +4,7 @@ import Rose from './rose.png'
 import Bagel from './bboy.png';
 import Nav from './Nav';
 import Projects from './Projects';
+import Resume from './Resume'
 import {Switch, Route, BrowserRouter as Router, NavLink, Link} from 'react-router-dom';
 import About from './About';
 import Contact from './Contact';
@@ -108,6 +109,7 @@ let handleClick = (e) => {
 
     </div>
     </div>
+  
   
   );
 }

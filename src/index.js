@@ -12,30 +12,16 @@ import { TransitionGroup, CSSTransitionGroup } from 'react-transition-group';
 
 ReactDOM.render(
   <Router>
-  
-  
+
 
     <Route path="/"component={App}/>
 
-    <Route path="/resume">
-    <Resume
-    key={13}/>
-    </Route>
-
-    <Route path="/contact" exact component={Contact}/>
-
-    <Route path="/projects">
-    <CSSTransitionGroup
-        transitionName="example"
-        transitionEnterTimeout={300}
-        transitionLeaveTimeout={300}>
-    <Projects
-    key={4}/>
-    </CSSTransitionGroup>
-  
-    </Route>
-
+    <Route path="/resume" component={Resume}/>
    
+    <Route path="/contact" exact component={Contact}/>
+    <Route path="/projects" exact  component={Projects}/>
+
+
   </Router>,
   document.getElementById('root')
 );
