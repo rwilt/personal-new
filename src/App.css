@@ -196,19 +196,20 @@ text-decoration: none;
 .project-container, #show-page{
 height: 100vh;
 width: 100vw;
-
 position: fixed;
 z-index: 1;
 right: 0;
 top: 0;
 overflow-x: hidden;
 z-index: 1;
+display: flex;
 
 }
 
 .project-list{
   margin: 40px;
-  
+  flex: 1;
+  border: 1px solid black;
 }
 
 .project-list h1:hover{
@@ -222,4 +223,22 @@ z-index: 1;
   /* background: linear-gradient(180deg, transparent 62%, rgb(201, 66, 119) 0) 50%/0 25% no-repeat; */
   background-size: 0px 75%;
   background-size: 100% 100%;
+}
+
+.close-btn{
+  background-color: transparent;
+  border: none;
+  font-size: 50px;
+  cursor: pointer;
+  text-decoration: none;
+  outline:none;
+  position: fixed;
+  right: 0;
+  padding: 10px;
+}
+
+.project-show{
+flex-grow:1;
+border: 1px solid black;
+margin: 40px;
 }
