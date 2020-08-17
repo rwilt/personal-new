@@ -7,18 +7,35 @@ import Contact from './Contact';
 import About from './About';
 import Resume from './Resume';
 import * as serviceWorker from './serviceWorker';
-import { Switch,BrowserRouter as Router, Route} from 'react-router-dom'
+import { Switch, BrowserRouter as Router, Route} from 'react-router-dom'
+import { TransitionGroup, CSSTransitionGroup } from 'react-transition-group';
 
 ReactDOM.render(
   <Router>
-   
-    <Route path="/"component={App}/>
-   
-    <Route path="/resume" exact component={Resume}/>
-    
-    <Route path="/contact" exact component={Contact}/>
-    <Route path="/projects" exact component={Projects}/>
+  
+  
 
+    <Route path="/"component={App}/>
+
+    <Route path="/resume">
+    <Resume
+    key={13}/>
+    </Route>
+
+    <Route path="/contact" exact component={Contact}/>
+
+    <Route path="/projects">
+    <CSSTransitionGroup
+        transitionName="example"
+        transitionEnterTimeout={300}
+        transitionLeaveTimeout={300}>
+    <Projects
+    key={4}/>
+    </CSSTransitionGroup>
+  
+    </Route>
+
+   
   </Router>,
   document.getElementById('root')
 );

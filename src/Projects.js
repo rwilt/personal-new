@@ -6,7 +6,7 @@ import {NavLink, Link} from 'react-router-dom';
 const Projects = (props) => {
 
 return(
-    <div className="project-container">Projects</div>
+    <div className="project-container">Projects!!!!!</div>
 )
     
 }

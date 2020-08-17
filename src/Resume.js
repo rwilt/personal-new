@@ -6,7 +6,7 @@ import {NavLink, Link} from 'react-router-dom';
 const Resume = (props) => {
 
 return(
-    <div> <Nav/></div>
+    <div> resume</div>
 )
     
 }
