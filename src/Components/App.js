@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
-import './App.css';
-import Rose from './rose.png'
-import Bagel from './bboy.png';
+import '../App.css';
+import Rose from '../rose.png'
+import Bagel from '../bboy.png';
 import Nav from './Nav';
 import Projects from './Projects';
 import Resume from './Resume'

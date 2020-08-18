@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import Projects from './Projects';
-import Contact from './Contact';
-import About from './About';
-import Resume from './Resume';
+import App from './Components/App';
+import Projects from './Components/Projects';
+import Contact from './Components/Contact';
+import About from './Components/About';
+import Resume from './Components/Resume';
 import * as serviceWorker from './serviceWorker';
 import { Switch, BrowserRouter as Router, Route} from 'react-router-dom'
 import { TransitionGroup, CSSTransitionGroup } from 'react-transition-group';

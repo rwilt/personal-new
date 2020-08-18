@@ -193,6 +193,7 @@ text-decoration: none;
 
   background-color: rgb(201, 194, 245);
 }
+
 .project-container, #show-page{
 height: 100vh;
 width: 100vw;
@@ -203,13 +204,13 @@ top: 0;
 overflow-x: hidden;
 z-index: 1;
 display: flex;
-
 }
 
-.project-list{
+.project-list, .contact-list{
   margin: 40px;
   flex: 1;
-  border: 1px solid black;
+  
+ 
 }
 
 .project-list h1:hover{
@@ -219,6 +220,7 @@ display: flex;
   cursor: pointer;
   display: inline;
   z-index: 1;
+  padding: 5px;
   background: linear-gradient(180deg, transparent 62%, rgb(255, 232, 209, .7) 0) 50%/0 25% no-repeat;
   /* background: linear-gradient(180deg, transparent 62%, rgb(201, 66, 119) 0) 50%/0 25% no-repeat; */
   background-size: 0px 75%;
@@ -242,3 +244,20 @@ flex-grow:1;
 border: 1px solid black;
 margin: 40px;
 }
+
+.contact-container, #show-page{
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  top: 0;
+  overflow-x: hidden;
+  z-index: 1;
+  display: flex;
+  background-color: rgb(250, 115, 77);
+
+  }
+
+  
+  
