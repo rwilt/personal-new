@@ -1,7 +1,11 @@
 import React, {useState, useEffect} from 'react';
 import '../App.css';
 import Nav from './Nav';
+import Coachable from './Coachable'
+import ChangeAgents from './ChangeAgents'
 import {NavLink, Link} from 'react-router-dom';
+import FarmersMarket from './FarmersMarket';
+import NetMuseum from './NetMuseum';
 
 const Projects = (props) => {
     let [clicked, setClick] = useState(false)
@@ -28,10 +32,10 @@ return(
     </div>
 
     <div className="project-show">
-        {currProj === "Coachable" ? "Coachable" : null}
-        {currProj === "Change Agents" ? "Change Agents" : null}
-        {currProj === "The Farmers Market" ? "The Farmers Market" : null}
-        {currProj === "The Net Museum" ? "The Net Museum" : null}
+        {currProj === "Coachable" ? <Coachable/> : null}
+        {currProj === "Change Agents" ? <ChangeAgents/> : null}
+        {currProj === "The Farmers Market" ? <FarmersMarket/> : null}
+        {currProj === "The Net Museum" ? <NetMuseum/> : null}
         {currProj === "Writing" ? "Writing" : null}
     </div>
     </div>
