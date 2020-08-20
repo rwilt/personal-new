@@ -17,7 +17,7 @@ ReactDOM.render(
     <Route path="/"component={App}/>
 
     <Route path="/resume" component={Resume}/>
-   
+    <Route path="/about" component={About}/>
     <Route path="/contact" exact component={Contact}/>
     <Route path="/projects" exact  component={Projects}/>
 

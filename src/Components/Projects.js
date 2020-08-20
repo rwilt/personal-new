@@ -7,6 +7,7 @@ import {NavLink, Link} from 'react-router-dom';
 import FarmersMarket from './FarmersMarket';
 import Lookbook from "./Lookbook";
 import NetMuseum from './NetMuseum';
+import Writing from './Writing';
 
 const Projects = (props) => {
     let [clicked, setClick] = useState(false)
@@ -39,7 +40,7 @@ return(
         {currProj === "Change Agents" ? <ChangeAgents/> : null}
         {currProj === "The Farmers Market" ? <FarmersMarket/> : null}
         {currProj === "The Net Museum" ? <NetMuseum/> : null}
-        {currProj === "Writing" ? "Writing" : null}
+        {currProj === "Writing" ? <Writing/> : null}
     </div>
     </div>
 )

@@ -1,8 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import '../App.css';
-import Projects from './Projects';
-import Contact from './Contact';
-import About from './About';
+
 import {NavLink, Link} from 'react-router-dom';
 
 let Nav = (props) => {
