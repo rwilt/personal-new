@@ -81,7 +81,7 @@
 } */
 h1{
    padding: 0;
-  font-size: 35px;
+  font-size: 32px;
   font-family: 'Porpora-Regular';
   line-height: 1.2;
   letter-spacing: 0.1em;
@@ -330,7 +330,7 @@ max-height: 350px;
   top: 0;
   overflow-x: hidden;
   display: flex;
-  background-color: rgb(250, 115, 77);
+  background-color: rgb(255, 232, 209);
   justify-items: center;
   justify-content: center;
   text-align: center;
@@ -348,7 +348,7 @@ max-height: 350px;
   .about-list a:hover{
     font-family: 'Porpora-Regular';
     letter-spacing: 0.2em;
-    color:rgb(255, 232, 209);
+    color:rgb(249, 109, 70);
     cursor: pointer;
     display: inline;
     z-index: 1;
