@@ -35,7 +35,7 @@ return(
 
     <div className="project-show">
         {currProj === "Coachable" ? <Coachable/> : null}
-        {currProj === "Lookbook" ? "Lookbook" : null }
+        {currProj === "Lookbook" ? <Lookbook/> : null }
         {currProj === "Change Agents" ? <ChangeAgents/> : null}
         {currProj === "The Farmers Market" ? <FarmersMarket/> : null}
         {currProj === "The Net Museum" ? <NetMuseum/> : null}
