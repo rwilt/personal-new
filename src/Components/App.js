@@ -99,11 +99,11 @@ let handleClick = (e) => {
     <div className="intro" >
       <h1>Hey! I'm <span className="highlight" onMouseEnter={handleMouseOver} onMouseLeave={handleMouseOut}> Rosie{hover && <img src={Rose} onMouseMove={(e)=>{moveMouseImg(e)}} style={styles}/>}</span>, a Software Engineer based in Brooklyn.</h1>
 
-       <h1>I'm experienced in JavaScript, React, Ruby, and Rails. I most enjoy working on creative projects that help others.</h1>
+       <h1>I most enjoy working on creative projects that help others, and I'm experienced in JavaScript, React, Ruby, and Rails. </h1>
      
-       <h1>Previously I worked in sales and merchandising for luxury fashion companies like <a className="highlight" href="http://shopredone.com">RE/DONE</a>.</h1>
-       <h1>Check out my  <NavLink to="/projects" className="highlight">projects</NavLink> and <a href="/resume"  className="highlight">CV</a> for more.</h1>
-       <h1>Outside of that, I enjoy cooking, <a className="highlight" href="https://www.youtube.com/watch?v=tTCS3cAaM3I">90's twee bands</a>, and Keanu Reeves. I live in Brooklyn with my cat, <span className="highlight" onMouseEnter={handleBMouseOver}  onMouseLeave={handleMouseOut}>Bagel{bagelHover && <img src={Bagel} className="bagel" onMouseMove={(e)=>{moveMouseBImg(e)}} style={styles}/>} </span>.</h1>
+       <h1>Previously, I worked in sales and merchandising for luxury fashion companies like <a className="highlight" href="http://shopredone.com">RE/DONE</a>.</h1>
+       <h1>Check out my  <NavLink to="/projects" className="highlight">projects</NavLink> and <a href="/resume"  className="highlight">resume</a> for more.</h1>
+       <h1>Outside of coding, I enjoy cooking, <a className="highlight" href="https://www.youtube.com/watch?v=n4zVYRBHPyM">90's alt rock</a>, and Keanu Reeves. I live in Brooklyn with my cat, <span className="highlight" onMouseEnter={handleBMouseOver}  onMouseLeave={handleMouseOut}>Bagel{bagelHover && <img src={Bagel} className="bagel" onMouseMove={(e)=>{moveMouseBImg(e)}} style={styles}/>} </span>.</h1>
  
        <h1>Still curious? <a href className="highlight" href={`mailto:${"rosie.wilt@gmail.com"}?subject=Hi%20Rosie%20:)!&body=Hey Rosie!%0D%0A%0D%0A I wanted to reach out about...[your message here - ideas: job opportunities, my projects, skincare, favorite breed of dog, Buffy and Spike vs. Buffy and Angel, etc.].`}>e-mail me</a>! </h1>
 

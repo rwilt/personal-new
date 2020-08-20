@@ -5,6 +5,7 @@ import Coachable from './Coachable'
 import ChangeAgents from './ChangeAgents'
 import {NavLink, Link} from 'react-router-dom';
 import FarmersMarket from './FarmersMarket';
+import Lookbook from "./Lookbook";
 import NetMuseum from './NetMuseum';
 
 const Projects = (props) => {
@@ -25,6 +26,7 @@ return(
 
     <div className="project-list">
     <h1 onMouseOver={handleURL} onClick={handleURL}>Coachable</h1>
+    <h1 onMouseOver={handleURL} onClick={handleURL}>Lookbook</h1>
     <h1 onMouseOver={handleURL} onClick={handleURL}>Change Agents</h1>
     <h1 onMouseOver={handleURL} onClick={handleURL}>The Farmers Market</h1>
     <h1 onMouseOver={handleURL} onClick={handleURL}>The Net Museum</h1>
@@ -33,6 +35,7 @@ return(
 
     <div className="project-show">
         {currProj === "Coachable" ? <Coachable/> : null}
+        {currProj === "Lookbook" ? "Lookbook" : null }
         {currProj === "Change Agents" ? <ChangeAgents/> : null}
         {currProj === "The Farmers Market" ? <FarmersMarket/> : null}
         {currProj === "The Net Museum" ? <NetMuseum/> : null}
