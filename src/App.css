@@ -79,6 +79,66 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 50px;
 } */
+
+@media screen and (max-width: 800px) {
+  header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .intro h1{
+    font-size: 3vh;
+  }
+  .intro{
+    width: 50%;
+  }
+
+ .project-container, .contact-container{
+  flex-direction: column;
+  left:0;
+  font-size: 2vh;
+  width: 100%;
+
+ }
+
+ .about-container{
+  
+  left:0;
+  font-size: 2vh;
+  width: 100%;
+ }
+
+
+ .project-list{
+   left: 0;
+   width: 100%;
+ }
+
+#media{
+  font-size: 3vh;
+ 
+}
+#media-div{
+  width: 100%;
+}
+
+a.close-btn{
+left: 0;
+width: 5%;
+font-size: 4vh;
+}
+
+.project-show{
+  display: block;
+  width: 100%;
+
+}
+
+
+}
+
+
 h1{
    padding: 0;
   font-size: 32px;
