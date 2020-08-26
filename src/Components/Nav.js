@@ -9,7 +9,7 @@ let Nav = (props) => {
         <div className="nav-container">
             <header>
                 <NavLink className="nav-link" to="/projects" exact>Projects</NavLink>
-                <a className="nav-link" target="_blank" href="https://drive.google.com/file/d/1IpxyoxvHZyOWafAPrO8sQAK6GcEXIYdn/view">Resume</a>
+                <a className="nav-link" target="_blank" href="https://drive.google.com/file/d/1IpxyoxvHZyOWafAPrO8sQAK6GcEXIYdn/view">Resumé</a>
                 <NavLink className="nav-link" to="/contact" exact>Contact</NavLink>
                 <NavLink className="nav-link" to="/about" exact>★</NavLink>
             </header>
