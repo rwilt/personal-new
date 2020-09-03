@@ -18,9 +18,10 @@ let [mousePos, setMousePos ] = useState({x:0, y:0})
 let [clicked, setClick] = useState(false)
 
 const handleMouseOver = e => {
-  setMousePos({x: e.clientX - 10, y: e.clientY - 10})
   setHover(true)
-  if (mousePos.X > 150 && mousePos.X > 450 &&  mousePos.y > 130){
+  setMousePos({x: e.clientX - 10 , y: e.clientY - 10})
+  console.log(mousePos.y)
+  if (mousePos.x > 400 || mousePos.y > 200){
     setHover(false)
   }
 }
@@ -28,17 +29,16 @@ const handleMouseOver = e => {
 const handleBMouseOver = e => {
   setBagelHover(true)
   setMousePos({x: e.clientX - 10, y: e.clientY - 10})
-
-  if (mousePos.X > 150 && mousePos.X > 450 &&  mousePos.y > 130){
-    setBagelHover(false)
+  if (mousePos.x > 790 && mousePos.x < 815 ||  mousePos.y > 650){
+    handleMouseOut()
   }
 }
 
 
 const handleMouseOut = e => {
-   
     setHover(false) 
     setBagelHover(false)
+
 }
 
 
@@ -96,8 +96,8 @@ let handleClick = (e) => {
  
     <div>
     <Nav/>
-    <div className="intro" >
-      <h1>Hey! I'm <span className="highlight" onMouseEnter={handleMouseOver} onMouseLeave={handleMouseOut}> Rosie{hover && <img src={Rose} onMouseMove={(e)=>{moveMouseImg(e)}} style={styles}/>}</span>, a Full Stack Developer based in Brooklyn.</h1>
+    <div onMouseOver={handleMouseOver} className="intro" >
+      <h1>Hey! I'm <span className="highlight" onMouseEnter={handleMouseOver} onMouseLeave={handleMouseOut}> Rosie{hover && <img className="rose" src={Rose} onMouseMove={(e)=>{moveMouseImg(e)}} style={styles}/>}</span>, a Full Stack Developer based in Brooklyn.</h1>
 
        <h1>I most enjoy working on creative projects that help others, and I'm experienced in JavaScript, React, Ruby, and Rails. </h1>
      

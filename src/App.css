@@ -196,7 +196,7 @@ span{
 }
 
 .rose{
-  height: 60px;
+  max-height: 80px;
 }
 
 .intro{
