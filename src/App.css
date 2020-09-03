@@ -75,10 +75,9 @@
 }
 
 
-/* h1{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 50px;
-} */
+h1{
+margin: 2%;
+}
 
 @media screen and (max-width: 800px) {
   header{
@@ -368,6 +367,10 @@ line-height: 1.5;
 
 .coachable-contain{
   margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-family: 'Porpora-Regular';
   
 }
@@ -417,4 +420,13 @@ max-height: 350px;
     /* background: linear-gradient(180deg, transparent 62%, rgb(201, 66, 119) 0) 50%/0 25% no-repeat; */
     background-size: 0px 75%;
     background-size: 100% 100%;
+  }
+
+  .videoDiv{
+    height: 350px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+
   }
