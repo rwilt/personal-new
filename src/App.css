@@ -173,7 +173,7 @@ span{
 }
 
 .highlight{
-
+ 
   background: linear-gradient(180deg, transparent 62%, rgb(175, 163, 255, .3) 0) 50%/0 25% no-repeat;
   /* background: linear-gradient(180deg, transparent 62%, rgb(201, 66, 119) 0) 50%/0 25% no-repeat; */
   background-size: 0px 75%;
@@ -183,7 +183,7 @@ span{
 
 .highlight:hover{
   font-family: 'Porpora-Regular';
-  letter-spacing: 0.2em;
+  letter-spacing: 0.16em;
   color:rgb(252, 68, 15);
   cursor: pointer;
   display: inline;

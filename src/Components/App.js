@@ -21,7 +21,7 @@ const handleMouseOver = e => {
   setHover(true)
   setMousePos({x: e.clientX - 10 , y: e.clientY - 10})
   console.log(mousePos.y)
-  if (mousePos.x > 400 || mousePos.y > 200){
+  if (mousePos.x > 420 || mousePos.y > 200){
     setHover(false)
   }
 }
@@ -97,13 +97,13 @@ let handleClick = (e) => {
     <div>
     <Nav/>
     <div onMouseOver={handleMouseOver} className="intro" >
-      <h1>Hey! I'm <span className="highlight" onMouseEnter={handleMouseOver} onMouseLeave={handleMouseOut}> Rosie{hover && <img className="rose" src={Rose} onMouseMove={(e)=>{moveMouseImg(e)}} style={styles}/>}</span>, a Full Stack Developer based in Brooklyn.</h1>
+      <h1>Hey! I'm <span className="highlight" onMouseEnter={handleMouseOver} onMouseLeave={handleMouseOut}> Rosie{hover && <img className="rose" alt="a picture of a rose" src={Rose} onMouseMove={(e)=>{moveMouseImg(e)}} style={styles}/>}</span>, a Full Stack Developer based in Brooklyn.</h1>
 
        <h1>I most enjoy working on creative projects that help others, and I'm experienced in JavaScript, React, Ruby, and Rails. </h1>
      
        <h1>Previously, I worked in sales and merchandising for luxury fashion companies like <a className="highlight" href="http://shopredone.com">RE/DONE</a>.</h1>
        <h1>Check out my  <NavLink to="/projects" className="highlight">projects</NavLink> and <a target="_blank" href="https://drive.google.com/file/d/1IpxyoxvHZyOWafAPrO8sQAK6GcEXIYdn/view?usp=sharing"  className="highlight">resume</a> for more.</h1>
-       <h1>Outside of coding, I enjoy cooking, <a className="highlight" href="https://www.youtube.com/watch?v=n4zVYRBHPyM">90's alt rock</a>, and Keanu Reeves. I live with my crazy cat, <span className="highlight" onMouseEnter={handleBMouseOver}  onMouseLeave={handleMouseOut}>Bagel{bagelHover && <img src={Bagel} className="bagel" onMouseMove={(e)=>{moveMouseBImg(e)}} style={styles}/>} </span>.</h1>
+       <h1>Outside of coding, I enjoy cooking, <a className="highlight" href="https://www.youtube.com/watch?v=n4zVYRBHPyM">90's alt rock</a>, and Keanu Reeves. I live with my crazy cat, <span className="highlight" onMouseEnter={handleBMouseOver}  onMouseLeave={handleMouseOut}>Bagel{bagelHover && <img src={Bagel} alt="a photo of a cat" className="bagel" onMouseMove={(e)=>{moveMouseBImg(e)}} style={styles}/>} </span>.</h1>
  
        <h1>Still curious? <a className="highlight" href={`mailto:${"rosie.wilt@gmail.com"}?subject=Hi%20Rosie%20:)!&body=Hey Rosie!%0D%0A%0D%0A I wanted to reach out about...[your message here - ideas: job opportunities, my projects, skincare, favorite breed of dog, Buffy and Spike vs. Buffy and Angel, etc.].`}>e-mail me</a>! </h1>
 
