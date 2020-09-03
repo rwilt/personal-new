@@ -102,7 +102,7 @@ let handleClick = (e) => {
        <h1>I most enjoy working on creative projects that help others, and I'm experienced in JavaScript, React, Ruby, and Rails. </h1>
      
        <h1>Previously, I worked in sales and merchandising for luxury fashion companies like <a className="highlight" href="http://shopredone.com">RE/DONE</a>.</h1>
-       <h1>Check out my  <NavLink to="/projects" className="highlight">projects</NavLink> and <a target="_blank" href="https://drive.google.com/file/d/1IpxyoxvHZyOWafAPrO8sQAK6GcEXIYdn/view?usp=sharing"  className="highlight">resume</a> for more.</h1>
+       <h1>Check out my  <NavLink to="/projects" className="highlight">projects</NavLink> and <a target="_blank" href="https://drive.google.com/file/d/11SxtdtTALNsjtWziDWHyiIQ39aJwiagJ/view?usp=sharing"  className="highlight">resume</a> for more.</h1>
        <h1>Outside of coding, I enjoy cooking, <a className="highlight" href="https://www.youtube.com/watch?v=n4zVYRBHPyM">90's alt rock</a>, and Keanu Reeves. I live with my crazy cat, <span className="highlight" onMouseEnter={handleBMouseOver}  onMouseLeave={handleMouseOut}>Bagel{bagelHover && <img src={Bagel} alt="a photo of a cat" className="bagel" onMouseMove={(e)=>{moveMouseBImg(e)}} style={styles}/>} </span>.</h1>
  
        <h1>Still curious? <a className="highlight" href={`mailto:${"rosie.wilt@gmail.com"}?subject=Hi%20Rosie%20:)!&body=Hey Rosie!%0D%0A%0D%0A I wanted to reach out about...[your message here - ideas: job opportunities, my projects, skincare, favorite breed of dog, Buffy and Spike vs. Buffy and Angel, etc.].`}>e-mail me</a>! </h1>
