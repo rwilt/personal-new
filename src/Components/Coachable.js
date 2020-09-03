@@ -11,7 +11,7 @@ return (
 </div>
 <h1 id="media"> Coachable is a game designed to help you become a better interviewee.</h1>
 <h1 id="media" >Built with React, Rails, Postgres, and Web Speech API.</h1>
-<a id="media" href="https://github.com/rwilt/coachable-frontend">View this project on GitHub</a>
+<a id="media" target="_blank" href="https://github.com/rwilt/coachable-frontend">View this project on GitHub</a>
 </div>
 )
 

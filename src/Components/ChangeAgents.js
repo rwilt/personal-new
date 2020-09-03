@@ -11,7 +11,7 @@ return (
 <p id="media" >Video coming soon!</p>
 <h1 id="media" > Change Agents is an app to help you find civic engagement opportunities.</h1>
 <h1 id="media">Built with JavaScript, Rails and PostgreSQL.</h1>
-<a id="media" href="https://github.com/katmaldon/ChangeAgents-API">View this project on GitHub</a>
+<a id="media" target="_blank" href="https://github.com/katmaldon/ChangeAgents-API">View this project on GitHub</a>
 </div>
 </div>
 )
