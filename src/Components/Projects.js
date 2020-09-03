@@ -26,12 +26,12 @@ return(
     <div className="project-container"><a href ="/" className="close-btn">X</a>
 
     <div className="project-list">
-    <h1 id="media" onMouseOver={handleURL} onClick={handleURL}>Coachable</h1>
-    <h1 id="media" onMouseOver={handleURL} onClick={handleURL}>Lookbook</h1>
-    <h1 id="media" onMouseOver={handleURL} onClick={handleURL}>Change Agents</h1>
-    <h1 id="media" onMouseOver={handleURL} onClick={handleURL}>The Farmers Market</h1>
-    <h1 id="media" onMouseOver={handleURL} onClick={handleURL}>The Net Museum</h1>
-    <h1 id="media" onMouseOver={handleURL} onClick={handleURL}>Writing</h1>
+    <h1 id="media" onClick={handleURL}>Coachable</h1>
+    <h1 id="media" onClick={handleURL}>Lookbook</h1>
+    <h1 id="media" onClick={handleURL}>Change Agents</h1>
+    <h1 id="media" onClick={handleURL}>The Farmers Market</h1>
+    <h1 id="media" onClick={handleURL}>The Net Museum</h1>
+    <h1 id="media" onClick={handleURL}>Writing</h1>
     </div>
 
     <div className="project-show">
