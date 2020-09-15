@@ -75,11 +75,11 @@
 }
 
 
-h1{
+/* h1{
 margin: 2%;
-}
+} */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   header{
     width: 100%;
     display: flex;
@@ -87,7 +87,7 @@ margin: 2%;
     align-items: center;
   }
   .intro h1{
-    font-size: 2vh;
+    font-size: 3vh;
   }
   .intro{
     width: 50%;
@@ -139,8 +139,10 @@ font-size: 4vh;
 
 
 h1{
-   padding: 0;
-  font-size: 32px;
+  display: inline-block;
+  margin: 1.2%;
+  padding: 0;
+  font-size: 4.5vh;
   font-family: 'Porpora-Regular';
   line-height: 1.2;
   letter-spacing: 0.1em;
