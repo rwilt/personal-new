@@ -99,7 +99,7 @@ let handleClick = (e) => {
     <div onMouseOver={handleMouseOver} className="intro" >
       <h1>Hey! I'm <span className="highlight" onMouseEnter={handleMouseOver} onMouseLeave={handleMouseOut}> Rosie{hover && <img className="rose" alt="a picture of a rose" src={Rose} onMouseMove={(e)=>{moveMouseImg(e)}} style={styles}/>}</span>, a Full Stack Developer based in Brooklyn.</h1>
 
-       <h1>I most enjoy working on creative projects that help others, and I'm experienced in JavaScript, React, Ruby, and Rails. </h1>
+       <h1>I get most excited about innovative projects that help make a difference. I'm experienced in JavaScript, React, Ruby, and Rails. </h1>
      
        <h1>Previously, I worked in sales and merchandising for luxury fashion companies like <a className="highlight" href="http://shopredone.com">RE/DONE</a>.</h1>
        <h1>Check out my  <NavLink to="/projects" className="highlight">projects</NavLink> and <a target="_blank" href="https://drive.google.com/file/d/1v_tceLa87k8TSA03HTKwe5Bx6oFddqmH/view?usp=sharing"  className="highlight">resume</a> for more.</h1>
