@@ -13,14 +13,11 @@ import { TransitionGroup, CSSTransitionGroup } from 'react-transition-group';
 ReactDOM.render(
   <Router>
 
-
     <Route path="/"component={App}/>
-
     <Route path="/resume" component={Resume}/>
     <Route path="/about" component={About}/>
     <Route path="/contact" exact component={Contact}/>
     <Route path="/projects" exact  component={Projects}/>
-
 
   </Router>,
   document.getElementById('root')
